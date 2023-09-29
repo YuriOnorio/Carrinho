@@ -7,7 +7,6 @@ export default function Carrinho() {
   return (
     <>
       <Topo titulo={carrinho.topo.titulo} />
-
       <View style={estilos.carrinho}>
         <Detalhe />
       </View>
