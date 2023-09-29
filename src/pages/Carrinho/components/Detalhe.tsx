@@ -22,7 +22,7 @@ export default function Detalhe({nome, nomeFazenda, descricao, preco}: Props) {
 
         <Text style={estilos.descricao}>{descricao}</Text>
 
-        <Text style={estilos.preco}>R$ 40,00</Text>
+        <Text style={estilos.preco}>{preco}</Text>
     </>
   );
 }
