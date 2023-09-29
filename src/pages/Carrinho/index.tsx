@@ -10,6 +10,8 @@ export default function Carrinho() {
       <View style={estilos.carrinho}>
         <Detalhe nome={carrinho.detalhes.nome} 
                  nomeFazenda={carrinho.detalhes.nomeFazenda}
+                 descricao={carrinho.detalhes.descricao}
+                 preco={carrinho.detalhes.preco}
         />
       </View>
     </>

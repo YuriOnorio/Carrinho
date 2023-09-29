@@ -5,10 +5,12 @@ import logo from "../../../../assets/logo.png";
 
 type Props= {
   nome: string,
-  nomeFazenda: string;
+  nomeFazenda: string,
+  descricao: string,
+  preco: string;
 }
 
-export default function Detalhe({nome, nomeFazenda}: Props) {
+export default function Detalhe({nome, nomeFazenda, descricao, preco}: Props) {
   return (
     <>
         <Text style={estilos.titulocarrinho}>{nome}</Text>
@@ -18,10 +20,7 @@ export default function Detalhe({nome, nomeFazenda}: Props) {
           <Text style={estilos.nomefazenda}>{nomeFazenda}</Text>
         </View>
 
-        <Text style={estilos.descricao}>
-          Uma cesta com produtos selecionados cuidadosamente da fazenda direto
-          para a sua cozinha
-        </Text>
+        <Text style={estilos.descricao}>{descricao}</Text>
 
         <Text style={estilos.preco}>R$ 40,00</Text>
     </>
