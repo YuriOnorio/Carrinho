@@ -8,7 +8,9 @@ export default function Carrinho() {
     <>
       <Topo titulo={carrinho.topo.titulo} />
       <View style={estilos.carrinho}>
-        <Detalhe />
+        <Detalhe nome={carrinho.detalhes.nome} 
+                 nomeFazenda={carrinho.detalhes.nomeFazenda}
+        />
       </View>
     </>
   );

@@ -3,14 +3,19 @@ import { StyleSheet, Image, Text, View } from "react-native";
 
 import logo from "../../../../assets/logo.png";
 
-export default function Detalhe() {
+type Props= {
+  nome: string,
+  nomeFazenda: string;
+}
+
+export default function Detalhe({nome, nomeFazenda}: Props) {
   return (
     <>
-        <Text style={estilos.titulocarrinho}>Carrinho de compras</Text>
+        <Text style={estilos.titulocarrinho}>{nome}</Text>
 
         <View style={estilos.fazenda}>
           <Image style={estilos.imagemFazenda} source={logo} />
-          <Text style={estilos.nomefazenda}>Fazenda Etec Cidade do Livro</Text>
+          <Text style={estilos.nomefazenda}>{nomeFazenda}</Text>
         </View>
 
         <Text style={estilos.descricao}>
